@@ -7,12 +7,21 @@ document.addEventListener("DOMContentLoaded", () => {
     function showToast(message, isEmail = false) {
       const toast = document.getElementById("toast")
       const toastMessage = document.querySelector(".toast-message")
+      const toastIcon = document.querySelector(".toast-icon")
   
       if (toast && toastMessage) {
         if (isEmail) {
           toast.classList.add("email-copied")
+          if (toastIcon) {
+            toastIcon.classList.remove("fa-check-circle")
+            toastIcon.classList.add("fa-envelope-open")
+          }
         } else {
           toast.classList.remove("email-copied")
+          if (toastIcon) {
+            toastIcon.classList.remove("fa-envelope-open")
+            toastIcon.classList.add("fa-check-circle")
+          }
         }
   
         toastMessage.textContent = message
@@ -97,6 +106,28 @@ document.addEventListener("DOMContentLoaded", () => {
         .writeText(email)
         .then(() => {
           showToast("Email copiado para a área de transferência!", true)
+  
+          // Adiciona classe visual aos ícones de email para mostrar confirmação
+          document.querySelectorAll(".email-link i").forEach((icon) => {
+            icon.classList.remove("fa-envelope")
+            icon.classList.add("fa-envelope-open")
+  
+            // Adiciona classe ao container do ícone se estiver na seção de contato
+            const contactItem = icon.closest(".contact-info-item")
+            if (contactItem) {
+              contactItem.classList.add("email-copied")
+            }
+  
+            // Restaura o ícone original após 3 segundos
+            setTimeout(() => {
+              icon.classList.remove("fa-envelope-open")
+              icon.classList.add("fa-envelope")
+  
+              if (contactItem) {
+                contactItem.classList.remove("email-copied")
+              }
+            }, 3000)
+          })
         })
         .catch((err) => {
           console.error("Erro ao copiar email: ", err)
@@ -118,4 +149,3 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     }
   })
-  

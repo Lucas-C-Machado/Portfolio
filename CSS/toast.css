@@ -25,11 +25,11 @@
   
   /* Toast para cópia de email */
   .toast.email-copied {
-    border-left-color: var(--primary);
+    border-left-color: #10b981;
   }
   
   .toast.email-copied .toast-icon {
-    color: var(--primary);
+    color: #10b981;
   }
   
   .toast.show {

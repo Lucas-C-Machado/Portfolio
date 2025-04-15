@@ -80,6 +80,18 @@
     transform: translateY(-5px);
   }
   
+  /* Estilo para o ícone de email quando copiado na seção sobre */
+  .social-links .email-link i.fa-envelope-open {
+    color: #10b981;
+  }
+  
+  .social-links .email-link:has(i.fa-envelope-open) {
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+  }
+  
   .profile-image {
     width: 16rem;
     height: 16rem;
@@ -117,4 +129,3 @@
     height: 100%;
     object-fit: cover;
   }
-  

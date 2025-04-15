@@ -190,3 +190,31 @@ Estiliza o formulário de contato e seus campos
     color: var(--primary);
   }
   
+  /* Estilo para ícones de email quando copiados */
+  .email-link i.fa-envelope-open {
+    color: #10b981;
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* Estilo para o ícone de email no contato quando copiado */
+  .contact-info-item .email-link i.fa-envelope-open + .contact-info-icon {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+  }
+  
+  /* Adicionar um efeito de transição suave para os ícones de email */
+  .email-link i {
+    transition: all 0.3s ease;
+  }
+  
+  /* Efeito hover especial para links de email */
+  .email-link:hover i {
+    transform: translateY(-2px);
+  }
+  
+  /* Estilo para o container do ícone de email quando copiado */
+  .contact-info-item.email-copied .contact-info-icon {
+    background-color: rgba(16, 185, 129, 0.1) !important;
+    color: #10b981 !important;
+    animation: pulse 1.5s infinite;
+  }
