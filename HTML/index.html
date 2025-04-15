@@ -54,6 +54,7 @@
             <li><a href="#experience" class="mobile-nav-link">Experiência</a></li>
             <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
             <li><a href="#certifications" class="mobile-nav-link">Certificações</a></li>
+            <li><a href="#extras" class="mobile-nav-link">Extras</a></li>
             <li><a href="#contact" class="mobile-nav-link">Contato</a></li>
         </ul>
     </div>
@@ -84,7 +85,7 @@
                             <a href="https://www.instagram.com/lucas_c_machad0/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                 <i class="fab fa-instagram fa-2x"></i>
                             </a>
-                            <a href="mailto:lucascamponogaramachado@gmail.com" target="_blank" aria-label="Email">
+                            <a href="javascript:void(0);" class="email-link" aria-label="Email">
                                 <i class="fas fa-envelope fa-2x"></i>
                             </a>                            
                         </div>
@@ -500,7 +501,10 @@
                                 </p>
                             </div>
                             <div class="card-content">
-                                <form id="contact-form" class="contact-form" action="https://formsubmit.co/lucascamponogaramachado@gmail.com" method="POST">
+                                <!-- Iframe oculto para receber a resposta do formulário -->
+                                <iframe name="hidden-iframe" id="hidden-iframe" style="display:none;"></iframe>
+                                
+                                <form id="contact-form" class="contact-form" action="https://formsubmit.co/lucascamponogaramachado@gmail.com" method="POST" target="hidden-iframe">
                                     <div class="form-grid">
                                         <div class="form-group">
                                             <label for="name">Nome</label>
@@ -521,12 +525,16 @@
                                     </div>
                                     <!-- Campos ocultos para FormSubmit -->
                                     <input type="hidden" name="_captcha" value="false">
-                                    <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem! Obrigado pelo contato.">
                                     <input type="hidden" name="_template" value="table">
                                     <input type="hidden" name="_subject" value="Nova mensagem do portfólio">
-                                    <!-- Campo especial para redirecionamento - usando URL com parâmetro de sucesso -->
-                                    <input type="hidden" name="_next" value="https://lucas-c-machado.github.io/index.html?success=true">
-                                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                                    <input type="hidden" name="_next" value="">
+                                    
+                                    <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                                        <span id="submit-text">Enviar Mensagem</span>
+                                        <span id="submit-loading" style="display: none;">
+                                            <i class="fas fa-spinner fa-spin"></i> Enviando...
+                                        </span>
+                                    </button>
                                 </form>
                             </div>
                         </div>
@@ -548,7 +556,7 @@
                                         </div>
                                         <div class="contact-info-content">
                                             <h4>Email</h4>
-                                            <a href="mailto:lucascamponogaramachado@gmail.com">lucascamponogaramachado@gmail.com</a>
+                                            <a href="javascript:void(0);" class="email-link">lucascamponogaramachado@gmail.com</a>
                                         </div>
                                     </div>
                                     <div class="contact-info-item">
@@ -557,7 +565,7 @@
                                         </div>
                                         <div class="contact-info-content">
                                             <h4>Telefone</h4>
-                                            <a href="tel:+5555992094317">+55 (55) 99209-4317</a>
+                                            <a href="tel:+5555992094317">+55 55 99209-4317</a>
                                         </div>
                                     </div>
                                     <div class="contact-info-item">
@@ -566,7 +574,7 @@
                                         </div>
                                         <div class="contact-info-content">
                                             <h4>Localização</h4>
-                                            <p>Santa Maria, RS - Brasil</p>
+                                            <a href="https://www.google.com/maps/place/Santa+Maria+-+RS/@-29.7771485,-54.1543062,10z/data=!3m1!4b1!4m6!3m5!1s0x9503cb5d0da567bf:0xa44d9c1e7f7f7297!8m2!3d-29.6894984!4d-53.7923441!16zL20vMDUwczJi?entry=ttu&g_ep=EgoyMDI1MDQxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Santa Maria, RS - Brasil</p>
                                         </div>
                                     </div>
                                     <div class="contact-info-item">
@@ -613,7 +621,7 @@
                     <a href="https://www.linkedin.com/in/lucas-c-machado-80090b307/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="mailto:lucascamponogaramachado@gmail.com" target="_blank" aria-label="Email">
+                    <a href="javascript:void(0);" class="email-link" aria-label="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -621,13 +629,14 @@
         </div>
     </footer>
 
+    <!-- Toast de notificação -->
     <div id="toast" class="toast">
-    <div class="toast-content">
-        <i class="fas fa-check-circle toast-icon"></i>
-        <div class="toast-message">Mensagem enviada com sucesso! Obrigado pelo contato.</div>
+        <div class="toast-content">
+            <i class="fas fa-check-circle toast-icon"></i>
+            <div class="toast-message">Mensagem enviada com sucesso! Obrigado pelo contato.</div>
+        </div>
+        <button class="toast-close" aria-label="Fechar">&times;</button>
     </div>
-    <button class="toast-close" aria-label="Fechar">&times;</button>
-</div>
 
 <!-- Adicione este código logo antes do fechamento da tag </body> -->
 <div id="thank-you-modal" class="thank-you-modal">
@@ -648,6 +657,11 @@
     </div>
 </div>
 
-    <script src="/JS/script.js"></script>
+    <script src="/JS/theme.js"></script>
+    <script src="/JS/navigation.js"></script>
+    <script src="/JS/skills.js"></script>
+    <script src="/JS/contact.js"></script>
+    <script src="/JS/animations.js"></script>
+    <script src="/JS/main.js"></script>
 </body>
 </html>
