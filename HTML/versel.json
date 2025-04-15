@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/CSS/(.*)", "dest": "/CSS/$1" },
+      { "src": "/JS/(.*)", "dest": "/JS/$1" },
+      { "src": "/Assets/(.*)", "dest": "/Assets/$1" },
+      { "src": "/(.*)", "dest": "/$1" }
+    ]
+  }
