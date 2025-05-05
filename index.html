@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Controlar como uma página web é exibida em dispositivos móveis. -->
+    <title>Lucas - Desenvolvedor Fullstack</title>
+    <meta name="description" content="Portfólio profissional de Lucas, desenvolvedor fullstack especializado em React e Node.js">
+    
+    <!--LINKS-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts | Otimizações de desempenho, faz com que as fontes carreguem mais rápido, melhorando a performance. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome | Biblioteca de ícones vetoriais (Como os de redes sociais, setas, menus, lixeiras, etc.)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Lucas</a>
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#about" class="nav-link">Sobre</a></li>
+                        <li><a href="#projects" class="nav-link">Projetos</a></li>
+                        <li><a href="#experience" class="nav-link">Experiência</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#certifications" class="nav-link">Certificações</a></li>
+                        <li><a href="#contact" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn" aria-label="Alternar tema" title="Alternar entre tema claro e escuro">
+                        <i class="fas fa-moon"></i>      
+                        <i class="fas fa-sun"></i>                
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li><a href="#about" class="mobile-nav-link">Sobre</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projetos</a></li>
+            <li><a href="#experience" class="mobile-nav-link">Experiência</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#certifications" class="mobile-nav-link">Certificações</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contato</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Seção Sobre -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h1 class="about-title">Olá, eu sou o <span class="highlight">Lucas</span></h1>
+                        <h2 class="about-subtitle">Desenvolvedor Fullstack</h2>
+                        <p class="about-description">
+                            Especializado em criar aplicações web modernas e responsivas com HTML, CSS e JavaScript. Apaixonado por
+                            resolver problemas complexos e entregar experiências de usuário excepcionais. Com mais de 1 ano de
+                            experiência no desenvolvimento de soluções web completas.
+                        </p>
+                        <div class="about-buttons">
+                            <a href="#contact" class="btn btn-primary">Entre em contato</a>
+                            <a href="Assets/CURRÍCULO.pdf" download class="btn btn-outline">
+                                <i class="fas fa-download"></i> Download CV
+                            </a>
+                        </div>
+                        <div class="social-links" style="display: flex; gap: 1rem; align-items: center; margin-top: 1rem;">
+                            <a href="https://www.linkedin.com/in/lucas-c-machado-80090b307/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                            <a href="https://www.instagram.com/lucas_c_machad0/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a href="javascript:void(0);" class="email-link" aria-label="Email">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </a>                            
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="profile-image">
+                            <img src="Assets/eu.jpeg" alt="Lucas" width="320" height="320">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Meus Projetos</h2>
+                    <p class="section-description">
+                        Uma seleção dos meus trabalhos recentes em desenvolvimento web e aplicações.
+                    </p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Projeto 1 -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-image">
+                            <img src="Assets/em breve.png" alt="E-commerce Moderno">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Landpage</h3>
+                            <p class="project-description">
+                                Em Breve!!!
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-highlights">
+                                <h4>Destaques:</h4>
+                                <ul>
+                                    <li>Em Breve</li>
+                                    <li>Em Breve</li>
+                                    <li>Em Breve</li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="#projects" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                                    <i class="fas fa-external-link-alt"></i> Visualizar
+                                </a>
+                                <a href="https://github.com/Lucas-C-Machado" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 2 -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-image">
+                            <img src="Assets/em breve.png" alt="Dashboard Analítico">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">CodeVital</h3>
+                            <p class="project-description">
+                                Site divulgatório com design dark moderno para empresa de desenvolvimento de software. 
+                            <div class="project-tags">                               
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-highlights">
+                                <h4>Destaques:</h4>
+                                <ul>
+                                    <li>Hero com animação de código</li>
+                                    <li>Animações de fade-in</li>
+                                    <li>Estilização de código com syntax highlighting</li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="#projects" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Visualizar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 3 -->
+                    <div class="project-card" data-category="backend">
+                        <div class="project-image">
+                            <img src="Assets/em breve.png" alt="API de Gerenciamento">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Site</h3>
+                            <p class="project-description">
+                                Em Breve!!!
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-highlights">
+                                <h4>Destaques:</h4>
+                                <ul>
+                                    <li>Em Breve</li>
+                                    <li>Em Breve</li>
+                                    <li>Em Breve</li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="#projects" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                                    <i class="fas fa-external-link-alt"></i> Visualizar
+                                </a>
+                                <a href="https://github.com/Lucas-C-Machado" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Experiência -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experiência Profissional</h2>
+                    <p class="section-description">
+                        Minha trajetória profissional e principais realizações.
+                    </p>
+                </div>
+
+                <div class="experience-timeline">
+                    <!-- Experiência 1 -->
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <h3 class="experience-title">Auxiliar Administrativo</h3>
+                                <h4 class="experience-company">IP Iluminações - Santa Maria</h4>
+                            </div>
+                            <div class="experience-period">Abril 2025 - Atualmente</div>
+                        </div>
+                        <div class="experience-content">
+                            <p class="experience-description">
+                                Atualmente sou responsável pelo setor administrativo da empresa, atuando diretamente na organização de documentos, emissão e controle de notas fiscais, além da gestão financeira interna. Realizo o envio de e-mails corporativos, me comunico com fornecedores e clientes, bem como encarregado pelas compras de materiais e insumos necessários para o funcionamento diário da empresa. Minha atuação contribui para a eficiência e organização dos processos administrativos.</p>
+                            <div class="experience-achievements">
+                                <h4>Principais realizações:</h4>
+                                <ul>
+                                    <li>Implantação e manutenção de um sistema de organização documental, garantindo fácil acesso e controle eficiente de arquivos e notas fiscais.</li>
+                                    <li>Gestão financeira interna eficaz, com controle rigoroso de despesas e apoio na tomada de decisões administrativas.</li>
+                                    <li>Padronização de processos administrativos, otimizando o fluxo de tarefas rotineiras como compras e comunicação com fornecedores.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experiência 2 -->
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <h3 class="experience-title">Auxiliar do Sargenteante</h3>
+                                <h4 class="experience-company">1° RCC</h4>
+                            </div>
+                            <div class="experience-period">Mar 2023 - Jan 2025</div>
+                        </div>
+                        <div class="experience-content">
+                            <p class="experience-description">
+                                Atuo como assistente do Sargenteante, auxiliando na gestão e organização de diversos tipos de documentos. Sou responsável pela elaboração da escala de serviço, aditamentos, pernoites e mapas da força, entre outras tarefas administrativas. Utilizo o sistema operacional Linux como principal ferramenta de trabalho, explorando aplicativos como LibreOffice, OnlyOffice e diversos outros recursos nativos do Linux, incluindo o Prompt de Comando.</p>
+                            <div class="experience-achievements">
+                                <h4>Principais realizações:</h4>
+                                <ul>
+                                    <li>Elaboração e controle eficiente da escala de serviço, aditamentos, pernoites e mapas da força, contribuindo diretamente para o bom funcionamento das operações diárias.</li>
+                                    <li>Domínio do sistema Linux como ambiente principal de trabalho, utilizando ferramentas como LibreOffice, OnlyOffice e recursos nativos, otimizando fluxos administrativos com autonomia e eficiência.</li>
+                                    <li>Suporte direto ao Sargenteante, atuando como peça-chave na coordenação de rotinas administrativas e tomada de decisões organizacionais.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experiência 3 -->
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <h3 class="experience-title">Jovem Aprendiz</h3>
+                                <h4 class="experience-company">Wagner Advogados Associados</h4>
+                            </div>
+                            <div class="experience-period">Set 2020 - Fev 2021</div>
+                        </div>
+                        <div class="experience-content">
+                            <p class="experience-description">
+                                Atendia a todas as necessidades administrativas da empresa, desde o atendimento ao cliente e realização de ligações até a gestão de documentos. Utilizava o Word e o Excel como principais ferramentas de trabalho, além de operar impressoras, digitalizadoras e picotadoras para manter a organização e eficiência dos processos.</p>
+                            <div class="experience-achievements">
+                                <h4>Principais realizações:</h4>
+                                <ul>
+                                    <li>Atendimento completo às demandas administrativas, garantindo o bom funcionamento das rotinas internas da empresa.</li>
+                                    <li>Realização de atendimento ao cliente e comunicação ativa via ligações, promovendo um relacionamento eficaz e organizado com o público.</li>
+                                    <li>Gestão e organização de documentos físicos e digitais, assegurando acessibilidade e controle dos registros corporativos.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Skills -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Habilidades & Tecnologias</h2>
+                    <p class="section-description">
+                        Ferramentas e tecnologias com as quais tenho experiência.
+                    </p>
+                </div>
+
+                <div class="skills-tabs">
+                    <div class="skills-tabs-content">
+                        <!-- Front end Skills -->
+                        <div class="skills-tab-pane active" id="frontend-skills">
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <div class="skill-info">
+                                        <h3 class="skill-name">HTML</h3>
+                                        <span class="skill-level">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-info">
+                                        <h3 class="skill-name">CSS</h3>
+                                        <span class="skill-level">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-info">
+                                        <h3 class="skill-name">JavaScript</h3>
+                                        <span class="skill-level">75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-info">
+                                        <h3 class="skill-name">Python</h3>
+                                        <span class="skill-level">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-info">
+                                        <h3 class="skill-name">PHP</h3>
+                                        <span class="skill-level">70%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-info">
+                                        <h3 class="skill-name">GitHub</h3>
+                                        <span class="skill-level">92%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-info">
+                                        <h3 class="skill-name">VS Studio Code</h3>
+                                        <span class="skill-level">94%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 94%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-info">
+                                        <h3 class="skill-name">Cursor</h3>
+                                        <span class="skill-level">91%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 91%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-info">
+                                        <h3 class="skill-name">Boostrap</h3>
+                                        <span class="skill-level">96%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 96%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Certificações -->
+        <section id="certifications" class="section certifications-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Certificações & Formação</h2>
+                    <p class="section-description">
+                        Minha formação acadêmica e certificações profissionais.
+                    </p>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Certificação 1 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3 class="certification-title">Análise e Desenvolvimento de Sistemas (ADS)</h3>
+                            <h4 class="certification-institution">Centro Universitário Internacional (UNINTER)</h4>
+                            <div class="certification-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>Em andamento</span>
+                            </div>
+                            <p class="certification-description">
+                                Capacitado para planejar, desenvolver, testar, implementar e manter sistemas de informação que atendam às necessidades de empresas e usuários.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certificação 2 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3 class="certification-title">Técnico em Informática</h3>
+                            <h4 class="certification-institution">Sistema de Ensino Gaúcho (SEG)</h4>
+                            <div class="certification-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>Em andamento</span>
+                            </div>
+                            <p class="certification-description">
+                                Capacitado para instalar, configurar, operar e realizar manutenção de computadores, redes e sistemas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certificação 3 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3 class="certification-title">Certificado de Nível Básico em Inglês</h3>
+                            <h4 class="certification-institution">KNN Idiomas</h4>
+                            <div class="certification-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>2018 a 2020</span>
+                            </div>
+                            <p class="certification-description">
+                                Conhecimento em leitura, escrita e compreensão de textos simples, especialmente voltados à área de tecnologia. Capacidade de interpretar instruções, manuais e comandos técnicos. Em processo contínuo de aprimoramento da proficiência.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certificação 4 -->
+                    <div class="certification-card">
+                        <div class="certification-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3 class="certification-title">Oficina de Desenvolvimento de Games em Unity</h3>
+                            <h4 class="certification-institution">Universidade Federal de Santa Maria (UFSM)</h4>
+                            <div class="certification-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>2020</span>
+                            </div>
+                            <p class="certification-description">
+                                Conhecimento básico no desenvolvimento de jogos 2D e 3D utilizando Unity, com experiência em criação de cenas, manipulação de objetos e aplicação de componentes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-description">
+                        Tem um projeto em mente ou quer conversar? Ficarei feliz em responder!
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Envie uma mensagem</h3>
+                                <p class="card-description">
+                                    Preencha o formulário abaixo e entrarei em contato o mais breve possível.
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <!-- Iframe oculto para receber a resposta do formulário -->
+                                <iframe name="hidden-iframe" id="hidden-iframe" style="display:none;"></iframe>
+                                
+                                <form id="contact-form" class="contact-form" action="https://formsubmit.co/lucascamponogaramachado@gmail.com" method="POST" target="hidden-iframe">
+                                    <div class="form-grid">
+                                        <div class="form-group">
+                                            <label for="name">Nome</label>
+                                            <input type="text" id="name" name="Nome" placeholder="Seu nome" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="e-mail">Email</label>
+                                            <input type="email" id="email" name="E-mail" placeholder="seu-email@exemplo.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Assunto</label>
+                                        <input type="text" id="subject" name="Assunto" placeholder="Assunto da mensagem" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Mensagem</label>
+                                        <textarea id="message" name="Mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+                                    </div>
+                                    <!-- Campos ocultos para FormSubmit -->
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_template" value="table">
+                                    <input type="hidden" name="_subject" value="Nova mensagem do portfólio">
+                                    <input type="hidden" name="_next" value="">
+                                    
+                                    <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                                        <span id="submit-text">Enviar Mensagem</span>
+                                        <span id="submit-loading" style="display: none;">
+                                            <i class="fas fa-spinner fa-spin"></i> Enviando...
+                                        </span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-container">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Informações de Contato</h3>
+                                <p class="card-description">
+                                    Outras formas de entrar em contato comigo.
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <div class="contact-info">
+                                    <div class="contact-info-item">
+                                        <div class="contact-info-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="contact-info-content">
+                                            <h4>Email</h4>
+                                            <a href="javascript:void(0);" class="email-link">lucascamponogaramachado@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-item">
+                                        <div class="contact-info-icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="contact-info-content">
+                                            <h4>Telefone</h4>
+                                            <a href="tel:+5555992094317">+55 (55) 99209-4317</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-item">
+                                        <div class="contact-info-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="contact-info-content">
+                                            <h4>Localização</h4>
+                                            <p>Santa Maria, RS - Brasil</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-item">
+                                        <div class="contact-info-icon">
+                                            <i class="fab fa-linkedin"></i>
+                                        </div>
+                                        <div class="contact-info-content">
+                                            <h4>LinkedIn</h4>
+                                            <a href="https://www.linkedin.com/in/lucas-c-machado-80090b307/" target="_blank" rel="noopener noreferrer">
+                                                linkedin.com/in/lucas-c-machado
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-item">
+                                        <div class="contact-info-icon">
+                                            <i class="fab fa-github"></i>
+                                        </div>
+                                        <div class="contact-info-content">
+                                            <h4>GitHub</h4>
+                                            <a href="https://github.com/Lucas-C-Machado" target="_blank" rel="noopener noreferrer">
+                                                https://github.com/Lucas-C-Machado
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    <p>&copy; <span id="current-year"></span> Lucas. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Lucas-C-Machado" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucas-c-machado-80090b307/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="email-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast de notificação -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle toast-icon"></i>
+            <div class="toast-message">Mensagem enviada com sucesso! Obrigado pelo contato.</div>
+        </div>
+        <button class="toast-close" aria-label="Fechar">&times;</button>
+    </div>
+
+<!-- Adicione este código logo antes do fechamento da tag </body> -->
+<div id="thank-you-modal" class="thank-you-modal">
+    <div class="thank-you-content">
+        <div class="thank-you-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h2 class="thank-you-title">Mensagem Enviada!</h2>
+        <p class="thank-you-message">
+            Obrigado pelo seu contato. Recebi sua mensagem e responderei o mais breve possível.
+        </p>
+        <div class="countdown">
+            Redirecionando em <span id="countdown">5</span> segundos...
+        </div>
+        <button id="close-thank-you" class="btn btn-primary">
+            <i class="fas fa-arrow-left"></i> Voltar para o site
+        </button>
+    </div>
+</div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
