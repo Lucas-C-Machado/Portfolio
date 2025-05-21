@@ -1,100 +1,100 @@
-🌐 Portfólio Pessoal
+🌐 **Personal Portfolio**
 
-Este é meu portfólio pessoal desenvolvido com HTML, CSS e JavaScript. Aqui mostro alguns dos meus projetos, habilidades e informações de contato.
+This is my personal portfolio developed with HTML, CSS, and JavaScript. Here I showcase some of my projects, skills, and contact information.
 
-📸 Preview
+📸 **Preview**
 
 https://github.com/user-attachments/assets/2999c8af-cf1c-4cd8-845f-5affeeedbe9a
 
 https://github.com/user-attachments/assets/71926af0-6626-4455-ad73-a110828b0eb4
 
-🚀 Deploy
+🚀 **Deployment**
 
-🔗 Acesse o projeto online:
+🔗 Access the project online:
 
-🛠 Tecnologias
+🛠 **Technologies**
 
 - HTML5;
 - CSS3;
 - JavaScript;
-- (Se tiver usado: animações, bibliotecas, etc.).
+- (If used: animations, libraries, etc.).
 
-📁 Estrutura de Pastas
+📁 **Folder Structure**
 
 ![image](https://github.com/user-attachments/assets/322ce386-f0c3-4e96-8cbe-5b670668a3be)
 
-📌 Funcionalidades
+📌 **Features**
 
-- Layout responsivo;
-- Menu de navegação com rolagem suave;
-- Sessões de projetos, habilidades e contato;
-- Footer com ícones de redes sociais.
+- Responsive layout;
+- Navigation menu with smooth scrolling;
+- Sections for projects, skills, and contact;
+- Footer with social media icons.
 
-✨ O que aprendi
+✨ **What I Learned**
 
-## Desenvolvimento Front-end
+## Front-end Development
 
-![html-5 (1)](https://github.com/user-attachments/assets/953217f7-7305-432a-afd3-3ed42422b3e4) HTML5 Semântico - Estruturação de páginas web com tags semânticas para melhor acessibilidade e SEO;
+![html-5 (1)](https://github.com/user-attachments/assets/953217f7-7305-432a-afd3-3ed42422b3e4) Semantic HTML5 - Structuring web pages with semantic tags for better accessibility and SEO;
 
-![css-3 (1)](https://github.com/user-attachments/assets/0dbe9acf-baf1-48d0-9e6b-579ae8ffefc6) CSS Avançado - Implementação de layouts responsivos, animações, transições e efeitos visuais;
+![css-3 (1)](https://github.com/user-attachments/assets/0dbe9acf-baf1-48d0-9e6b-579ae8ffefc6) Advanced CSS - Implementing responsive layouts, animations, transitions, and visual effects;
 
-![js (1)](https://github.com/user-attachments/assets/52399d42-7a93-4d3e-82aa-bd4d3b24b3c5) JavaScript Moderno - Manipulação do DOM, eventos, funções assíncronas e interatividade;
+![js (1)](https://github.com/user-attachments/assets/52399d42-7a93-4d3e-82aa-bd4d3b24b3c5) Modern JavaScript - DOM manipulation, events, asynchronous functions, and interactivity;
 
-![design-responsivo (1)](https://github.com/user-attachments/assets/2ee2c556-f8eb-40a8-a7f7-db96196d6271) Responsividade - Design adaptável para diferentes tamanhos de tela (mobile, tablet, desktop).
-
-
-## Organização de Código
-
-- Modularização - Separação de código em arquivos específicos por funcionalidade (CSS e JavaScript);
-
-- Arquitetura CSS - Organização de estilos por componentes e funcionalidades;
-
-- Boas práticas de estruturação - Separação de preocupações entre estrutura, estilo e comportamento.
+![design-responsivo (1)](https://github.com/user-attachments/assets/2ee2c556-f8eb-40a8-a7f7-db96196d6271) Responsiveness - Adaptive design for different screen sizes (mobile, tablet, desktop).
 
 
-## Experiência do Usuário (UX)
+## Code Organization
 
-- Feedback Visual - Implementação de notificações toast, animações de confirmação e estados de hover;
+- Modularization - Separating code into specific files by functionality (CSS and JavaScript);
 
-- Acessibilidade - Uso de atributos ARIA, contraste adequado e navegação intuitiva;
+- CSS Architecture - Organizing styles by components and features;
 
-- Microinterações - Pequenas animações e transições que melhoram a experiência do usuário;
+- Best structuring practices - Separation of concerns between structure, style, and behavior.
 
-- Tema Claro/Escuro - Implementação de alternância de temas com persistência de preferência.
+
+## User Experience (UX)
+
+- Visual Feedback - Implementation of toast notifications, confirmation animations, and hover states;
+
+- Accessibility - Use of ARIA attributes, proper contrast, and intuitive navigation;
+
+- Microinteractions - Small animations and transitions that improve user experience;
+
+- Light/Dark Theme - Implementation of theme toggling with preference persistence.
 
 
 ## Performance
 
-- Otimização de CSS - Organização eficiente de estilos para evitar redundâncias;
+- CSS Optimization - Efficient style organization to avoid redundancies;
 
-- Carregamento Eficiente - Precarregamento de fontes e recursos críticos;
+- Efficient Loading - Preloading fonts and critical resources;
 
-- Animações Otimizadas - Uso de propriedades CSS que aproveitam a aceleração de hardware.
-
-
-## Técnicas Específicas
-
-- Manipulação da Área de Transferência - Cópia de email para clipboard com feedback visual;
-
-- Formulários Interativos - Validação de formulários e feedback de envio;
-
-- Navegação Suave - Implementação de rolagem suave para links internos;
-
-- Animações Baseadas em Scroll - Elementos que animam conforme aparecem na viewport.
+- Optimized Animations - Use of CSS properties that leverage hardware acceleration.
 
 
-## Ferramentas e Tecnologias
+## Specific Techniques
 
-- Controle de Versão - Integração com GitHub para versionamento de código;
+- Clipboard Manipulation - Copy email to clipboard with visual feedback;
 
-- Bibliotecas Externas - Integração com Font Awesome para ícones;
+- Interactive Forms - Form validation and submission feedback;
 
-- Google Fonts - Implementação de fontes web personalizadas;
+- Smooth Navigation - Smooth scrolling for internal links;
 
-- FormSubmit - Integração com serviço de envio de formulários sem backend.
+- Scroll-Based Animations - Elements that animate as they enter the viewport.
 
-📬 Contato
 
-- [E-mail](mailto:lucascamponogaramachado@gmail.com)
-- [LinkedIn](https://www.linkedin.com/in/lucas-c-machado-80090b307/)
+## Tools and Technologies
+
+- Version Control - Integration with GitHub for code versioning;
+
+- External Libraries - Integration with Font Awesome for icons;
+
+- Google Fonts - Use of custom web fonts;
+
+- FormSubmit - Integration with form submission service without backend.
+
+📬 **Contact**
+
+- [Email](mailto:lucascamponogaramachado@gmail.com)  
+- [LinkedIn](https://www.linkedin.com/in/lucas-c-machado-80090b307/)  
 - [Instagram](https://www.instagram.com/lucas_c_machad0?igsh=bWNsZDN6ajg4cTk2)
