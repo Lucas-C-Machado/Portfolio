@@ -12,6 +12,8 @@ https://github.com/user-attachments/assets/71926af0-6626-4455-ad73-a110828b0eb4
 
 🔗 Access the project online:
 
+https://lucas-c-machado.github.io/Portfolio/
+
 🛠 **Technologies**
 
 - HTML5;
